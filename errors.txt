@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 22: imagemap expects a non-empty block.
+    imagemap:
+             ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Tue Jul 25 14:47:11 2023
