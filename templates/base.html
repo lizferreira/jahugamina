@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title> {% block tittles %} Jahugamina {% endblock %} </title>
+</head>
+<body>
+
+
+    <!-- <HEADER> -->
+     <header class="bg-gradient-to-r from-purple-500 to-pink-500">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+          <div class="flex lg:flex-1">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Jahugamina</span>
+              <img class="h-8 w-auto" src= "../static/foto.png"  alt="Jahugamina">
+            </a>
+          </div>
+          <div class="flex lg:hidden">
+            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Abrir menú principal</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+          <div class="hidden lg:flex lg:gap-x-12">
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Inicio</a>
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Secciones</a>
+          </div>
+          <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden" role="dialog" aria-modal="true">
+          <!-- Background backdrop, show/hide based on slide-over state. -->
+          <div class="fixed inset-0 z-10"></div>
+        </div>
+      </header>
+ 
+      
+{% block contenido %}
+
+{% endblock %}
+
+      <!-- FOOTER -->
+      <footer class="bg-gradient-to-r from-purple-500 to-pink-500 inset-x-0 bottom-0 px-10 py-0.002 fixed-bottom-0" aria-labelledby="footer-heading">
+        <h2 id="footer-heading" class="sr-only">Pie de página</h2>
+        <div class="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8 lg:py-32 flex flex-col items-center">
+          <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+            <img class="h-7" src= "../static/foto.png" alt="Jahugamina">
+            <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                <div>
+                  <h3 class="text-sm font-semibold leading-6 text-white">Acerca de</h3>
+                </div>
+                <div class="mt-10 md:mt-0">
+                  <h3 class="text-sm font-semibold leading-6 text-white">Soporte</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+
+</body>
+</html>
